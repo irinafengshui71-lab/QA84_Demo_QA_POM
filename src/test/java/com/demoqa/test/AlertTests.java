@@ -4,18 +4,25 @@ import com.demoqa.core.TestBase;
 import com.demoqa.pages.HomePage;
 import com.demoqa.pages.SidePanel;
 import com.demoqa.pages.alertsFrameWindows.AlertPages;
+import com.demoqa.pages.alertsFrameWindows.FramesPage;
+import com.demoqa.pages.alertsFrameWindows.NestedFramesPage;
+import com.demoqa.pages.alertsFrameWindows.WindowsPage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class AlertTests extends TestBase {
     SidePanel sidePanel;
     AlertPages alerts;
+    FramesPage frames;
+    NestedFramesPage nestedFrames;
 
     @BeforeEach
     public void precondition(){
         new HomePage(driver).getAlertsFrameWindow();
         sidePanel = new SidePanel(driver);
         alerts = new AlertPages(driver);
+        frames = new FramesPage(driver);
+        nestedFrames = new NestedFramesPage(driver);
     }
     @Test
     public void waitAlertTest(){
@@ -28,5 +35,32 @@ public class AlertTests extends TestBase {
         alerts.clickOnResult("Cancel")
                 .verifyResult("Cancel");
     }
+    @Test
+    public void sentMessageToAlertTest(){
+        sidePanel.getAlerts();
+        alerts.clickOnPromtButton()
+                .sendMessegeToAlert("Hello world")
+                .clickOnResult("Ok")
+                .verifyMessage("Hello World");
+    }
+    @Test
+    public void newTabTest(){
+        sidePanel.getBrowserWindows();
+        new WindowsPage(driver).clickOnNewTabButton()
+                .switchToNewTab(1)
+                .verifyToTabTitle("This is a sample page");
+    }
+
+@Test
+    public void frameByIdTest(){
+        sidePanel.getFrames();
+        frames.switchToframeById().verifyFrameByTitle("Text")
+                .switchToHomePage().verifyMainPageByTitle("This is a sample page");
+}
+@Test
+    public void nestedFramesTest(){
+    sidePanel.getNestedFrames();
+    nestedFrames.verifyNestedFrames();
+}
 
 }

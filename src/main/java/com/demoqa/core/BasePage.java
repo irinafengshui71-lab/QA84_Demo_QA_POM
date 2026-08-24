@@ -1,5 +1,6 @@
 package com.demoqa.core;
 
+import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -13,21 +14,25 @@ import java.time.Duration;
 public abstract class BasePage {
    protected WebDriver driver;
    public static JavascriptExecutor js;
+   public static SoftAssertions softly;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         js = (JavascriptExecutor) driver;
+        softly = new SoftAssertions();
     }
-    public void scrollWithJS(int x,int y){
+    public void scrollWithJS(WebElement element, int x, int y){
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
         js.executeScript("window.scrollBy(" + x + "," + y + ")");
     }
-    public void clickWithJS(WebElement element,int x,int y){
-        scrollWithJS(x,y);
+    public void clickWithJS(WebElement element,int x, int y){
+        scrollWithJS(element,x, y);
         js.executeScript("arguments[0].click();", element);
     }
+
     public void typeWithJS(WebElement element,String text,int x,int y){
-        scrollWithJS(x,y);
+        scrollWithJS(element,x, y);
         type(element,text);
     }
 
@@ -42,7 +47,7 @@ public abstract class BasePage {
         }
     }
     public boolean isAlertPresent(int time){
-        Alert alert = new WebDriverWait(driver, Duration.ofSeconds(time))
+        Alert alert = getWait(time)
                 .until(ExpectedConditions.alertIsPresent());
         if (alert == null){
             return false;
@@ -52,7 +57,21 @@ public abstract class BasePage {
         }
     }
 
+    public WebDriverWait getWait(int time) {
+        return new WebDriverWait(driver, Duration.ofSeconds(time));
+    }
+
     public boolean isContainsText(String text, WebElement element) {
         return element.getText().contains(text);
     }
+    public boolean shouldHaveText(WebElement element,String text, int time){
+        return getWait(time).until(ExpectedConditions.textToBePresentInElement(element, text));
+
+    }
 }
+//js.executeScript("arguments[0].scrollIntoView(true);", element);
+
+//public void scrollWithJS(WebElement element){
+//    js.executeScript("arguments[0].scrollIntoView(true);", element);
+//    //js.executeScript("window.scrollBy(" + x + "," + y+ ")");
+//}
