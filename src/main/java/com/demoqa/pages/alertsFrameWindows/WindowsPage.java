@@ -16,7 +16,7 @@ public class WindowsPage extends BasePage {
     @FindBy(id = "tabButton")
     WebElement tabButton;
     public WindowsPage clickOnNewTabButton() {
-        click(tabButton);
+        clickWithJS(tabButton, 0,150);
         return this;
     }
 

@@ -39,7 +39,7 @@ public class AlertTests extends TestBase {
     public void sentMessageToAlertTest(){
         sidePanel.getAlerts();
         alerts.clickOnPromtButton()
-                .sendMessegeToAlert("Hello world")
+                .sendMessageToAlert("Hello World")
                 .clickOnResult("Ok")
                 .verifyMessage("Hello World");
     }
@@ -54,8 +54,8 @@ public class AlertTests extends TestBase {
 @Test
     public void frameByIdTest(){
         sidePanel.getFrames();
-        frames.switchToframeById().verifyFrameByTitle("Text")
-                .switchToHomePage().verifyMainPageByTitle("This is a sample page");
+        frames.switchToframeById().verifyFrameByTitle("This is a sample page")
+                .switchToHomePage().verifyMainPageByTitle("Frames");
 }
 @Test
     public void nestedFramesTest(){

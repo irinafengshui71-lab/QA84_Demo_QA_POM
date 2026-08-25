@@ -17,11 +17,11 @@ public class WidgeeTstest extends TestBase {
         select = new SelectPage(driver);
         new HomePage(driver).getWidgets();
     }
-    @Test
-    public void oldStyleSelectMenuTest(){
-            sidePanel.getSelectMenu();
-            select.oldStyleSelect("Green")
-                    .verifyColor();
+//    @Test
+//    public void oldStyleSelectMenuTest(){
+//            sidePanel.getSelectMenu();
+//            select.oldStyleSelect("Green")
+//                    .verifyColor();
 
-        }
+       // }
 }

@@ -41,28 +41,25 @@ public class AlertPages extends BasePage {
 @FindBy(id="promtButton")
 WebElement promtButton;
     public AlertPages clickOnPromtButton() {
-        cklickWitJS(promtButton, 0, 300);
+        clickWithJS(promtButton, 0, 300);
         return this;
     }
 
-    private void cklickWitJS(WebElement promtButton, int i, int i1) {
 
 
-    }
 
-
-    public AlertPages sendMessegeToAlert(String messege) {
-        if (messege != null){
-            driver.switchTo().alert().sendKeys(messege);
+    public AlertPages sendMessageToAlert(String message) {
+        if (message != null){
+            driver.switchTo().alert().sendKeys(message);
             driver.switchTo().alert().accept();
 
         }
         return this;
     }
-@FindBy(id = "promtResult")
-WebElement promtResult;
+@FindBy(id = "promptResult")
+WebElement promptResult;
     public AlertPages verifyMessage(String text) {
-        Assertions.assertTrue(isContainsText(text, promtResult));
+        Assertions.assertTrue(isContainsText(text, promptResult));
         return this;
     }
 }

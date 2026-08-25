@@ -34,6 +34,7 @@ public class SidePanel extends BasePage {
     @FindBy(css = "a[href='/browser-windows']")
     WebElement browserWindows;
     public WindowsPage getBrowserWindows() {
+        clickWithJS(browserWindows, 0, 150);
         return new WindowsPage(driver);
     }
     @FindBy(css = "a[href='/frames']")
