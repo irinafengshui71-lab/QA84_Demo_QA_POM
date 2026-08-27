@@ -13,17 +13,17 @@ public class AlertPages extends BasePage {
     }
     @FindBy(id ="timerAlertButton")
     WebElement timerAlertButton;
-
     public AlertPages verifyAlertWithTimer() {
-        clickWithJS(timerAlertButton,0,200);
+        clickWithJS(timerAlertButton);
         Assertions.assertTrue(isAlertPresent(5));
         return this;
     }
 
+
     @FindBy(id = "confirmButton")
     WebElement confirmButton;
     public AlertPages clickOnResult(String result) {
-        clickWithJS(confirmButton,0,200);
+        clickWithJS(confirmButton);
         if (result != null && result.equals("Ok")){
             driver.switchTo().alert().accept();
         }else if (result != null && result.equals("Cancel")){
@@ -32,16 +32,18 @@ public class AlertPages extends BasePage {
         return this;
     }
 
+
     @FindBy(id = "confirmResult")
     WebElement confirmResult;
     public AlertPages verifyResult(String text) {
         Assertions.assertTrue(isContainsText(text, confirmResult));
         return this;
     }
+
 @FindBy(id="promtButton")
 WebElement promtButton;
     public AlertPages clickOnPromtButton() {
-        clickWithJS(promtButton, 0, 300);
+        clickWithJS(promtButton);
         return this;
     }
 

@@ -39,7 +39,7 @@ public class AlertTests extends TestBase {
     public void sentMessageToAlertTest(){
         sidePanel.getAlerts();
         alerts.clickOnPromtButton()
-                .sendMessageToAlert("Hello World")
+                .sendMessageToAlert("Hello W.orld")
                 .clickOnResult("Ok")
                 .verifyMessage("Hello World");
     }

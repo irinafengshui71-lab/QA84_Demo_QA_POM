@@ -18,8 +18,8 @@ public class LoginPage extends BasePage {
 
     public LoginPage enterUserData(String userName, String password) {
 
-        typeWithJS(userNameInput,userName, 0, 200);
-        typeWithJS(userPasswordInput,password, 0, 200);
+        typeWithJS(userNameInput,userName);
+        typeWithJS(userPasswordInput,password);
 
         return this;
     }
@@ -27,7 +27,7 @@ public class LoginPage extends BasePage {
     WebElement loginButton;
 
     public LoginPage clickOnLoginButton() {
-        clickWithJS(loginButton, 0, 500);
+        clickWithJS(loginButton);
 
         return this;
     }
