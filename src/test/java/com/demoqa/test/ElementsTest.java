@@ -13,6 +13,7 @@ import org.junit.jupiter.api.parallel.Resources;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ArgumentsSource;
 import org.junit.jupiter.params.provider.ArgumentsSources;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 public class ElementsTest extends TestBase {
     SidePanel sidePanel;
@@ -48,14 +49,14 @@ public class ElementsTest extends TestBase {
                 .verifyAddress();
 
     }
-//    @ParameterizedTest
-//    @ArgumentsSource(Resources = "/QA_84_Data-Sheet1.csv")
-//    public void textBoxWithParameterTest(String name,String email,String address){
-//        sidePanel.getTextBox();
-//        textBox.enterPersonalData(name,email,address)
-//                .clickOnSubmitButton()
-//                .verifyAddress();
-//    }
+    @ParameterizedTest
+    @CsvFileSource(resources ="/Data84.csv")
+    public void textBoxWithParameterTest(String name,String email,String address){
+        sidePanel.getTextBox();
+        textBox.enterPersonalData(name,email,address)
+                .clickOnSubmitButton()
+                .verifyAddress();
+    }
     @Test
     public void javaScriptExecutorTest(){
         sidePanel.getTextBox();

@@ -1,6 +1,7 @@
 package com.demoqa.core;
-
+//import com.demoqa.utils.LoggerWriter;
 import org.assertj.core.api.SoftAssertions;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -60,6 +61,7 @@ public abstract class BasePage {
             return true;
         }
     }
+    //@ExtendWith(LoggerWriter.class)
 
     public WebDriverWait getWait(int time) {
 
@@ -90,7 +92,6 @@ public abstract class BasePage {
     public void verifyLinks(String url){
         try {
             URL linkUrl = new URL(url);
-//create URL connection and get response code
             HttpURLConnection connection = (HttpURLConnection) linkUrl.openConnection();
             connection.setConnectTimeout(5000);
             connection.connect();
@@ -111,7 +112,4 @@ public abstract class BasePage {
 }
 //js.executeScript("arguments[0].scrollIntoView(true);", element);
 
-//public void scrollWithJS(WebElement element){
-//    js.executeScript("arguments[0].scrollIntoView(true);", element);
-//    //js.executeScript("window.scrollBy(" + x + "," + y+ ")");
-//}
+
