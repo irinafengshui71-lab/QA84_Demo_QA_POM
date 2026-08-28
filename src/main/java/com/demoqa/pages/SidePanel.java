@@ -1,5 +1,5 @@
 package com.demoqa.pages;
-
+import com.demoqa.pages.elements.UploadPage;
 import com.demoqa.core.BasePage;
 import com.demoqa.pages.alertsFrameWindows.AlertPages;
 import com.demoqa.pages.alertsFrameWindows.FramesPage;
@@ -95,6 +95,13 @@ WebElement selectMenu;
     public BrokenLinksImagesPage getBrokenLinkImages() {
         clickWithJS(broken);
         return new BrokenLinksImagesPage(driver);
+    }
+    @FindBy(css="a[href='/upload-download']")
+    WebElement uploads;
+
+    public UploadPage getUpload() {
+        clickWithJS(uploads);
+        return new UploadPage(driver);
     }
 }
 

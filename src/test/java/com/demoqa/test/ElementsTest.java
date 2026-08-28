@@ -1,5 +1,5 @@
 package com.demoqa.test;
-
+import com.demoqa.pages.elements.UploadPage;
 import com.demoqa.core.TestBase;
 import com.demoqa.pages.HomePage;
 import com.demoqa.pages.SidePanel;
@@ -20,6 +20,8 @@ public class ElementsTest extends TestBase {
     ButtonPage buttons;
     TextBoxPage textBox;
     BrokenLinksImagesPage brokenLinks;
+    UploadPage upload;
+
     @BeforeEach
     public void precondition(){
         sidePanel = new  SidePanel(driver);
@@ -27,6 +29,7 @@ public class ElementsTest extends TestBase {
         new HomePage(driver).getElements();
         textBox = new TextBoxPage(driver);
         brokenLinks = new BrokenLinksImagesPage(driver);
+        upload = new UploadPage(driver);
     }
     @Test
     public void doubleClickTest(){
@@ -79,7 +82,17 @@ public class ElementsTest extends TestBase {
         brokenLinks.checkBrokenLinks();
 
     }
-
+    @Test
+    public void checkBrokenImagesTest(){
+        sidePanel.getBrokenLinkImages();
+        brokenLinks.checkBrokenImages();
+    }
+    @Test
+    public void performKeyEventTest(){
+        sidePanel.getUpload();
+        upload.performKeyEvent()
+                .verifyFilePath("C:\\fakepath\\myFile.txt");
+    }
 
 }
 
