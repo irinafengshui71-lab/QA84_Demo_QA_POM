@@ -8,6 +8,7 @@ import com.demoqa.pages.alertsFrameWindows.FramesPage;
 import com.demoqa.pages.alertsFrameWindows.NestedFramesPage;
 import com.demoqa.pages.alertsFrameWindows.WindowsPage;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class AlertTests extends TestBase {
@@ -39,7 +40,7 @@ public class AlertTests extends TestBase {
     public void sentMessageToAlertTest(){
         sidePanel.getAlerts();
         alerts.clickOnPromtButton()
-                .sendMessageToAlert("Hello W.orld")
+                .sendMessageToAlert("Hello World")
                 .clickOnResult("Ok")
                 .verifyMessage("Hello World");
     }
@@ -58,6 +59,7 @@ public class AlertTests extends TestBase {
                 .switchToHomePage().verifyMainPageByTitle("Frames");
 }
 @Test
+@Tag("smoky")
     public void nestedFramesTest(){
     sidePanel.getNestedFrames();
     nestedFrames.verifyNestedFrames();

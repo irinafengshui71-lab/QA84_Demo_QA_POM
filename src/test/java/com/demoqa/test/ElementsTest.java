@@ -8,6 +8,7 @@ import com.demoqa.pages.elements.ButtonPage;
 import com.demoqa.pages.elements.TextBoxPage;
 import com.demoqa.utils.MyArgumentsProvider;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Resources;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -71,6 +72,7 @@ public class ElementsTest extends TestBase {
 
     }
     @Test
+    @Tag("smoky")
     public void getAllLinksTest(){
         sidePanel.getBrokenLinkImages();
         brokenLinks.getAllLinks();

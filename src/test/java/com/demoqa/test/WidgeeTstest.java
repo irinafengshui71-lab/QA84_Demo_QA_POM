@@ -8,6 +8,7 @@ import com.demoqa.widgets.SelectPage;
 import com.demoqa.widgets.SliderPage;
 import com.demoqa.widgets.ToolTipsPage;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class WidgeeTstest extends TestBase {
@@ -48,6 +49,7 @@ public class WidgeeTstest extends TestBase {
 
         }
         @Test
+        @Tag("smoky")
     public void sliderTest(){
         sidePanel.getSlider();
             new SliderPage(driver).moveSlider()
