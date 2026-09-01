@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.demoqa.test.ElementsTest" time="82.217" tests="12" errors="2" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\750033\Documents\JavaTypes\QA84_DemoQA_POM\target\test-classes;C:\Users\750033\Documents\JavaTypes\QA84_DemoQA_POM\target\classes;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-java\4.47.0\selenium-java-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-api\4.47.0\selenium-api-4.47.0.jar;C:\Users\750033\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.47.0\selenium-chrome-driver-4.47.0.jar;C:\Users\750033\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.47.0\selenium-chromium-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-json\4.47.0\selenium-json-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.47.0\selenium-manager-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.47.0\selenium-devtools-latest-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.47.0\selenium-devtools-v149-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.47.0\selenium-devtools-v150-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.47.0\selenium-devtools-v151-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.47.0\selenium-edge-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.47.0\selenium-firefox-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-http\4.47.0\selenium-http-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.47.0\selenium-ie-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.47.0\selenium-remote-driver-4.47.0.jar;C:\Users\750033\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\750033\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\750033\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\750033\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-os\4.47.0\selenium-os-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.47.0\selenium-safari-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-support\4.47.0\selenium-support-4.47.0.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter\6.1.3\junit-jupiter-6.1.3.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.1.3\junit-jupiter-api-6.1.3.jar;C:\Users\750033\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\750033\.m2\repository\org\junit\platform\junit-platform-commons\6.1.3\junit-platform-commons-6.1.3.jar;C:\Users\750033\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.1.3\junit-jupiter-params-6.1.3.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.1.3\junit-jupiter-engine-6.1.3.jar;C:\Users\750033\.m2\repository\org\junit\platform\junit-platform-engine\6.1.3\junit-platform-engine-6.1.3.jar;C:\Users\750033\.m2\repository\ch\qos\logback\logback-classic\1.6.3\logback-classic-1.6.3.jar;C:\Users\750033\.m2\repository\ch\qos\logback\logback-core\1.6.3\logback-core-1.6.3.jar;C:\Users\750033\.m2\repository\org\slf4j\slf4j-api\2.0.18\slf4j-api-2.0.18.jar;C:\Users\750033\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.3\webdrivermanager-6.3.3.jar;C:\Users\750033\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\750033\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java\3.6.0\docker-java-3.6.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-core\3.6.0\docker-java-core-3.6.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-api\3.6.0\docker-java-api-3.6.0.jar;C:\Users\750033\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\750033\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\750033\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\750033\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.6.0\docker-java-transport-httpclient5-3.6.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-transport\3.6.0\docker-java-transport-3.6.0.jar;C:\Users\750033\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\750033\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\750033\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\750033\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\750033\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\750033\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\750033\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\750033\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\750033\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\750033\.m2\repository\org\assertj\assertj-core\3.27.5\assertj-core-3.27.5.jar;C:\Users\750033\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="DE"/>
+    <property name="group" value="smoky"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\750033\AppData\Local\Temp\surefire4938932945852822202\surefirebooter-20260831135857913_3.jar C:\Users\750033\AppData\Local\Temp\surefire4938932945852822202 2026-08-31T13-58-57_052-jvmRun1 surefire-20260831135857913_1tmp surefire_0-20260831135857913_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\750033\Documents\JavaTypes\QA84_DemoQA_POM\target\test-classes;C:\Users\750033\Documents\JavaTypes\QA84_DemoQA_POM\target\classes;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-java\4.47.0\selenium-java-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-api\4.47.0\selenium-api-4.47.0.jar;C:\Users\750033\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.47.0\selenium-chrome-driver-4.47.0.jar;C:\Users\750033\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.47.0\selenium-chromium-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-json\4.47.0\selenium-json-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.47.0\selenium-manager-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.47.0\selenium-devtools-latest-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.47.0\selenium-devtools-v149-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.47.0\selenium-devtools-v150-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.47.0\selenium-devtools-v151-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.47.0\selenium-edge-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.47.0\selenium-firefox-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-http\4.47.0\selenium-http-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.47.0\selenium-ie-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.47.0\selenium-remote-driver-4.47.0.jar;C:\Users\750033\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\750033\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\750033\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\750033\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\750033\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-os\4.47.0\selenium-os-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.47.0\selenium-safari-driver-4.47.0.jar;C:\Users\750033\.m2\repository\org\seleniumhq\selenium\selenium-support\4.47.0\selenium-support-4.47.0.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter\6.1.3\junit-jupiter-6.1.3.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.1.3\junit-jupiter-api-6.1.3.jar;C:\Users\750033\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\750033\.m2\repository\org\junit\platform\junit-platform-commons\6.1.3\junit-platform-commons-6.1.3.jar;C:\Users\750033\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.1.3\junit-jupiter-params-6.1.3.jar;C:\Users\750033\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.1.3\junit-jupiter-engine-6.1.3.jar;C:\Users\750033\.m2\repository\org\junit\platform\junit-platform-engine\6.1.3\junit-platform-engine-6.1.3.jar;C:\Users\750033\.m2\repository\ch\qos\logback\logback-classic\1.6.3\logback-classic-1.6.3.jar;C:\Users\750033\.m2\repository\ch\qos\logback\logback-core\1.6.3\logback-core-1.6.3.jar;C:\Users\750033\.m2\repository\org\slf4j\slf4j-api\2.0.18\slf4j-api-2.0.18.jar;C:\Users\750033\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.3\webdrivermanager-6.3.3.jar;C:\Users\750033\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\750033\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java\3.6.0\docker-java-3.6.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-core\3.6.0\docker-java-core-3.6.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-api\3.6.0\docker-java-api-3.6.0.jar;C:\Users\750033\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\750033\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\750033\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\750033\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.6.0\docker-java-transport-httpclient5-3.6.0.jar;C:\Users\750033\.m2\repository\com\github\docker-java\docker-java-transport\3.6.0\docker-java-transport-3.6.0.jar;C:\Users\750033\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\750033\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\750033\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\750033\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\750033\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\750033\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\750033\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\750033\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\750033\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\750033\.m2\repository\org\assertj\assertj-core\3.27.5\assertj-core-3.27.5.jar;C:\Users\750033\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\750033"/>
+    <property name="user.language" value="de"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\750033\Documents\JavaTypes\QA84_DemoQA_POM"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\750033\AppData\Local\Temp\surefire4938932945852822202\surefirebooter-20260831135857913_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.9+7-LTS-338"/>
+    <property name="user.name" value="750033"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\750033\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\750033\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="user.dir" value="C:\Users\750033\Documents\JavaTypes\QA84_DemoQA_POM"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Tools\apache-maven-3.9.16\bin;C:\Users\750033\AppData\Local\Microsoft\WindowsApps;C:\Users\750033\AppData\Local\Programs\mongosh\;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.9+7-LTS-338"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="rightClickTest" classname="com.demoqa.test.ElementsTest" time="4.162">
+    <system-out><![CDATA[13:59:33.482 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+13:59:33.515 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+13:59:33.517 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+13:59:33.517 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+13:59:33.532 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+13:59:33.533 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+13:59:35.607 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+13:59:37.172 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@3c9e19de]
+13:59:37.173 [main] INFO com.demoqa.utils.MyListener -- *******************************
+13:59:37.274 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (9c30d73dd0207d34bc7a0abf474104a2)] -> id: rightClickMessage] contains You have done a right click
+13:59:37.275 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+]]></system-out>
+  </testcase>
+  <testcase name="textBoxWithParameterTest(String, String, String)[1]" classname="com.demoqa.test.ElementsTest" time="5.837">
+    <system-out><![CDATA[13:59:37.738 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+13:59:37.747 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+13:59:37.747 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+13:59:37.747 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+13:59:37.753 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+13:59:37.753 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+13:59:39.338 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+13:59:41.192 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: userName]
+13:59:41.192 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:41.346 [main] INFO com.demoqa.utils.MyListener -- We enter [Kristina Tomash] to element [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: userName]
+13:59:41.346 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:41.487 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: userEmail]
+13:59:41.487 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:41.720 [main] INFO com.demoqa.utils.MyListener -- We enter [Test1234@gmail.com] to element [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: userEmail]
+13:59:41.721 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:41.942 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: currentAddress]
+13:59:41.942 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:42.090 [main] INFO com.demoqa.utils.MyListener -- We enter [Berlin] to element [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: currentAddress]
+13:59:42.091 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:42.789 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: permanentAddress]
+13:59:42.789 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:42.973 [main] INFO com.demoqa.utils.MyListener -- We enter [Berlin] to element [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: permanentAddress]
+13:59:42.973 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:43.078 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> id: submit]
+13:59:43.078 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:43.119 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> css selector: .border #currentAddress] contains Current Address :Berlin
+13:59:43.120 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+13:59:43.167 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (4775a44faa1cb5eb5296b02abff5fb65)] -> css selector: .border #permanentAddress] contains Permananet Address :Berlin
+13:59:43.167 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+]]></system-out>
+  </testcase>
+  <testcase name="textBoxWithParameterTest(String, String, String)[2]" classname="com.demoqa.test.ElementsTest" time="6.001">
+    <system-out><![CDATA[13:59:43.582 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+13:59:43.608 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+13:59:43.609 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+13:59:43.609 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+13:59:43.633 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+13:59:43.635 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+13:59:45.681 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+13:59:47.157 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: userName]
+13:59:47.158 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:47.454 [main] INFO com.demoqa.utils.MyListener -- We enter [Kristina Tomash1] to element [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: userName]
+13:59:47.455 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:48.016 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: userEmail]
+13:59:48.016 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:48.317 [main] INFO com.demoqa.utils.MyListener -- We enter [Test1234@gmail.com] to element [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: userEmail]
+13:59:48.317 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:48.485 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: currentAddress]
+13:59:48.485 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:48.580 [main] INFO com.demoqa.utils.MyListener -- We enter [Amsterdam] to element [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: currentAddress]
+13:59:48.580 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:48.785 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: permanentAddress]
+13:59:48.785 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:48.951 [main] INFO com.demoqa.utils.MyListener -- We enter [Amsterdam] to element [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: permanentAddress]
+13:59:48.952 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:49.093 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> id: submit]
+13:59:49.093 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:49.141 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> css selector: .border #currentAddress] contains Current Address :Amsterdam
+13:59:49.141 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+13:59:49.185 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (642c67d24bcbd393a763b00bf2414b78)] -> css selector: .border #permanentAddress] contains Permananet Address :Amsterdam
+13:59:49.185 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+]]></system-out>
+  </testcase>
+  <testcase name="textBoxWithParameterTest(String, String, String)[3]" classname="com.demoqa.test.ElementsTest" time="5.908">
+    <system-out><![CDATA[13:59:49.587 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+13:59:49.611 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+13:59:49.614 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+13:59:49.614 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+13:59:49.633 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+13:59:49.634 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+13:59:51.689 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+13:59:53.110 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: userName]
+13:59:53.111 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:53.372 [main] INFO com.demoqa.utils.MyListener -- We enter [Kristina Tomash2] to element [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: userName]
+13:59:53.372 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:54.151 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: userEmail]
+13:59:54.151 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:54.306 [main] INFO com.demoqa.utils.MyListener -- We enter [Test1235@gmail.com] to element [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: userEmail]
+13:59:54.307 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:54.431 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: currentAddress]
+13:59:54.432 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:54.551 [main] INFO com.demoqa.utils.MyListener -- We enter [Paris] to element [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: currentAddress]
+13:59:54.551 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:54.722 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: permanentAddress]
+13:59:54.722 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:54.872 [main] INFO com.demoqa.utils.MyListener -- We enter [Paris] to element [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: permanentAddress]
+13:59:54.872 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+13:59:55.006 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> id: submit]
+13:59:55.006 [main] INFO com.demoqa.utils.MyListener -- ********************************
+13:59:55.062 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> css selector: .border #currentAddress] contains Current Address :Paris
+13:59:55.062 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+13:59:55.102 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (2eb662df4e7e01ec2c55e344c1849ab2)] -> css selector: .border #permanentAddress] contains Permananet Address :Paris
+13:59:55.102 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+]]></system-out>
+  </testcase>
+  <testcase name="textBoxWithParameterTest(String, String, String)[4]" classname="com.demoqa.test.ElementsTest" time="4.929">
+    <error message="element click intercepted: Element is not clickable at point (671, -109)&#10;  (Session info: chrome=151.0.7922.174)&#10;Build info: version: &apos;4.47.0&apos;, revision: &apos;9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ed75161778114913085c504c86547c69, clickElement {id=f.48FD919F06D52B3D2C1CF09D8F12BD0C.d.65CDA9A6D5687EA035AF9A659326CB2E.e.21}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\750033\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49361}, goog:processID: 13984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49361/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (ed75161778114913085c504c86547c69)] -&gt; id: userName]&#10;Session ID: ed75161778114913085c504c86547c69" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (671, -109)
+  (Session info: chrome=151.0.7922.174)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed75161778114913085c504c86547c69, clickElement {id=f.48FD919F06D52B3D2C1CF09D8F12BD0C.d.65CDA9A6D5687EA035AF9A659326CB2E.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\750033\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49361}, goog:processID: 13984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49361/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ed75161778114913085c504c86547c69)] -> id: userName]
+Session ID: ed75161778114913085c504c86547c69
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:326)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$0(WebDriverDecorator.java:416)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$FdGqt7Sj.click(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy61.click(Unknown Source)
+	at com.demoqa.core.BasePage.click(BasePage.java:41)
+	at com.demoqa.core.BasePage.type(BasePage.java:46)
+	at com.demoqa.core.BasePage.typeWithJS(BasePage.java:37)
+	at com.demoqa.pages.elements.TextBoxPage.enterPersonalData(TextBoxPage.java:49)
+	at com.demoqa.test.ElementsTest.textBoxWithParameterTest(ElementsTest.java:60)
+]]></error>
+    <system-out><![CDATA[13:59:55.501 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+13:59:55.526 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+13:59:55.527 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+13:59:55.527 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+13:59:55.545 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+13:59:55.548 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+13:59:57.598 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+13:59:59.806 [main] ERROR com.demoqa.utils.MyListener -- The test has a problem!!!
+13:59:59.806 [main] ERROR com.demoqa.utils.MyListener -- **************************
+13:59:59.806 [main] ERROR com.demoqa.utils.MyListener -- Method --> click
+13:59:59.806 [main] ERROR com.demoqa.utils.MyListener -- Target exception --> {}
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (671, -109)
+  (Session info: chrome=151.0.7922.174)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed75161778114913085c504c86547c69, clickElement {id=f.48FD919F06D52B3D2C1CF09D8F12BD0C.d.65CDA9A6D5687EA035AF9A659326CB2E.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\750033\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49361}, goog:processID: 13984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49361/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ed75161778114913085c504c86547c69)] -> id: userName]
+Session ID: ed75161778114913085c504c86547c69
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:326)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$0(WebDriverDecorator.java:416)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$FdGqt7Sj.click(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy61.click(Unknown Source)
+	at com.demoqa.core.BasePage.click(BasePage.java:41)
+	at com.demoqa.core.BasePage.type(BasePage.java:46)
+	at com.demoqa.core.BasePage.typeWithJS(BasePage.java:37)
+	at com.demoqa.pages.elements.TextBoxPage.enterPersonalData(TextBoxPage.java:49)
+	at com.demoqa.test.ElementsTest.textBoxWithParameterTest(ElementsTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:700)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:528)
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:53)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:94)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:124)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:268)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:246)
+	at org.junit.jupiter.engine.descriptor.TemplateExecutor.execute(TemplateExecutor.java:96)
+	at org.junit.jupiter.engine.descriptor.TemplateExecutor.lambda$executeForProvider$1(TemplateExecutor.java:59)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.junit.jupiter.engine.descriptor.TemplateExecutor.lambda$executeForProvider$0(TemplateExecutor.java:59)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at org.junit.jupiter.params.shadow.de.siegmar.fastcsv.reader.CsvReader$CsvSpliterator.tryAdvance(CsvReader.java:330)
+	at org.junit.jupiter.params.provider.CsvFileArgumentsProvider$CsvExceptionHandlingSpliterator.tryAdvance(CsvFileArgumentsProvider.java:110)
+	at java.base/java.util.Spliterator.forEachRemaining(Spliterator.java:332)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.descriptor.TemplateExecutor.executeForProvider(TemplateExecutor.java:57)
+	at org.junit.jupiter.engine.descriptor.TemplateExecutor.execute(TemplateExecutor.java:46)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:112)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:40)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:256)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:228)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:189)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:109)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:168)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:126)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:100)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:57)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:45)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:57)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+13:59:59.807 [main] ERROR com.demoqa.utils.MyListener -- Screen with error -->screenshots/screen_675.png
+]]></system-out>
+  </testcase>
+  <testcase name="checkBrokenImagesTest" classname="com.demoqa.test.ElementsTest" time="4.691">
+    <failure message="&#10;Multiple Failures (2 failures)&#10;-- failure 1 --Broken image -&gt;https://demoqa.com/images/Toolsqa.jpg&#10;at BrokenLinksImagesPage.checkBrokenImages(BrokenLinksImagesPage.java:54)&#10;-- failure 2 --Broken image -&gt;https://demoqa.com/images/Toolsqa_1.jpg&#10;at BrokenLinksImagesPage.checkBrokenImages(BrokenLinksImagesPage.java:54)" type="org.assertj.core.error.AssertJMultipleFailuresError"><![CDATA[org.assertj.core.error.AssertJMultipleFailuresError: 
+
+Multiple Failures (2 failures)
+-- failure 1 --Broken image ->https://demoqa.com/images/Toolsqa.jpg
+at BrokenLinksImagesPage.checkBrokenImages(BrokenLinksImagesPage.java:54)
+-- failure 2 --Broken image ->https://demoqa.com/images/Toolsqa_1.jpg
+at BrokenLinksImagesPage.checkBrokenImages(BrokenLinksImagesPage.java:54)
+	at com.demoqa.pages.elements.BrokenLinksImagesPage.checkBrokenImages(BrokenLinksImagesPage.java:61)
+	at com.demoqa.test.ElementsTest.checkBrokenImagesTest(ElementsTest.java:90)
+]]></failure>
+    <system-out><![CDATA[14:00:00.444 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+14:00:00.466 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+14:00:00.467 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+14:00:00.467 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14:00:00.477 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+14:00:00.478 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+14:00:02.755 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+Total images on the page = 3
+]]></system-out>
+  </testcase>
+  <testcase name="copyPastTest" classname="com.demoqa.test.ElementsTest" time="5.063">
+    <system-out><![CDATA[14:00:05.137 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+14:00:05.150 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+14:00:05.151 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+14:00:05.151 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14:00:05.161 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+14:00:05.162 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+14:00:07.205 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+14:00:08.654 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (dd6b31e3806e7980543326a9262ac095)] -> id: currentAddress]
+14:00:08.656 [main] INFO com.demoqa.utils.MyListener -- ********************************
+14:00:09.371 [main] INFO com.demoqa.utils.MyListener -- We enter [Berlin,12435] to element [[ChromeDriver: chrome on windows (dd6b31e3806e7980543326a9262ac095)] -> id: currentAddress]
+14:00:09.371 [main] INFO com.demoqa.utils.MyListener -- ********************************************
+14:00:09.439 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@565c887e]
+14:00:09.440 [main] INFO com.demoqa.utils.MyListener -- *******************************
+14:00:09.484 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@1f013047]
+14:00:09.484 [main] INFO com.demoqa.utils.MyListener -- *******************************
+14:00:09.503 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@44c2e8a8]
+14:00:09.503 [main] INFO com.demoqa.utils.MyListener -- *******************************
+14:00:09.582 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@1fa796a4]
+14:00:09.582 [main] INFO com.demoqa.utils.MyListener -- *******************************
+14:00:09.752 [main] INFO com.demoqa.utils.MyListener -- We clicked on [[ChromeDriver: chrome on windows (dd6b31e3806e7980543326a9262ac095)] -> id: submit]
+14:00:09.753 [main] INFO com.demoqa.utils.MyListener -- ********************************
+14:00:09.796 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (dd6b31e3806e7980543326a9262ac095)] -> css selector: .border #currentAddress] contains Current Address :Berlin,12435
+14:00:09.796 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+14:00:09.821 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (dd6b31e3806e7980543326a9262ac095)] -> css selector: .border #permanentAddress] contains Permananet Address :Berlin,12435
+14:00:09.822 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+]]></system-out>
+  </testcase>
+  <testcase name="javaScriptExecutorTest" classname="com.demoqa.test.ElementsTest" time="4.576">
+    <system-out><![CDATA[14:00:10.201 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+14:00:10.216 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+14:00:10.217 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+14:00:10.217 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14:00:10.228 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+14:00:10.230 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+14:00:12.229 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+Elements
+ 
+Text Box
+Check Box
+Radio Button
+Web Tables
+Buttons
+Links
+Broken Links - Images
+Upload and Download
+Dynamic Properties
+Forms
+ 
+Alerts, Frame & Windows
+ 
+Widgets
+ 
+Interactions
+ 
+Book Store Application
+ 
+Text Box
+Full Name
+Email
+Current Address
+Permanent Address
+Submit
+
+Name:Kris Tomash
+
+Email:tett@gmail.com
+
+© 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED.
+https://demoqa.com/text-box
+IlCarro
+]]></system-out>
+  </testcase>
+  <testcase name="doubleClickTest" classname="com.demoqa.test.ElementsTest" time="4.035">
+    <system-out><![CDATA[14:00:14.778 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+14:00:14.788 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+14:00:14.789 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+14:00:14.789 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14:00:14.795 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+14:00:14.796 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+14:00:16.830 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+14:00:18.392 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@34fcc5e3]
+14:00:18.392 [main] INFO com.demoqa.utils.MyListener -- *******************************
+14:00:18.451 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (120c300378a94ba2c68a07a73fdd20d4)] -> id: doubleClickMessage] contains You have done a double click
+14:00:18.451 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+]]></system-out>
+  </testcase>
+  <testcase name="getAllLinksTest" classname="com.demoqa.test.ElementsTest" time="3.91">
+    <system-out><![CDATA[14:00:18.817 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+14:00:18.844 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+14:00:18.846 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+14:00:18.846 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14:00:18.867 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+14:00:18.869 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+14:00:20.999 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+Total links on the page = 2
+14:00:22.351 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (b08f54c9868d2c2beee4085a65a1782a)] -> css selector: div.col-md-6 a] contains Click Here for Valid Link
+14:00:22.351 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+Click Here for Valid Link
+14:00:22.366 [main] INFO com.demoqa.utils.MyListener -- [[ChromeDriver: chrome on windows (b08f54c9868d2c2beee4085a65a1782a)] -> css selector: div.col-md-6 a] contains Click Here for Broken Link
+14:00:22.367 [main] INFO com.demoqa.utils.MyListener -- ****************************************
+Click Here for Broken Link
+]]></system-out>
+  </testcase>
+  <testcase name="checkBrokenLinksTest" classname="com.demoqa.test.ElementsTest" time="4.159">
+    <failure message="&#10;Multiple Failures (1 failure)&#10;-- failure 1 --http://the-internet.herokuapp.com/status_codes/500 --&gt; Internal Server Error is a BROKEN links&#10;at BasePage.verifyLinks(BasePage.java:99)" type="org.assertj.core.error.AssertJMultipleFailuresError"><![CDATA[org.assertj.core.error.AssertJMultipleFailuresError: 
+
+Multiple Failures (1 failure)
+-- failure 1 --http://the-internet.herokuapp.com/status_codes/500 --> Internal Server Error is a BROKEN links
+at BasePage.verifyLinks(BasePage.java:99)
+	at com.demoqa.pages.elements.BrokenLinksImagesPage.checkBrokenLinks(BrokenLinksImagesPage.java:34)
+	at com.demoqa.test.ElementsTest.checkBrokenLinksTest(ElementsTest.java:84)
+]]></failure>
+    <system-out><![CDATA[14:00:22.727 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+14:00:22.741 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+14:00:22.742 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+14:00:22.742 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14:00:22.753 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+14:00:22.754 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+14:00:24.838 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+]]></system-out>
+  </testcase>
+  <testcase name="performKeyEventTest" classname="com.demoqa.test.ElementsTest" time="28.798">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#uploadedFilePath&quot;}&#10;  (Session info: chrome=151.0.7922.174)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception&#10;Build info: version: &apos;4.47.0&apos;, revision: &apos;9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2af3af9479ad0a95cd300538e182b568, findElement {using=id, value=uploadedFilePath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\750033\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65406}, goog:processID: 6500, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65406/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2af3af9479ad0a95cd300538e182b568" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#uploadedFilePath"}
+  (Session info: chrome=151.0.7922.174)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2af3af9479ad0a95cd300538e182b568, findElement {using=id, value=uploadedFilePath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\750033\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65406}, goog:processID: 6500, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65406/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2af3af9479ad0a95cd300538e182b568
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:326)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$0(WebDriverDecorator.java:416)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$pW7L3fgs.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy61.getText(Unknown Source)
+	at com.demoqa.core.BasePage.isContainsText(BasePage.java:70)
+	at com.demoqa.pages.elements.UploadPage.verifyFilePath(UploadPage.java:54)
+	at com.demoqa.test.ElementsTest.performKeyEventTest(ElementsTest.java:96)
+]]></error>
+    <system-out><![CDATA[14:00:26.891 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 6.3.3
+14:00:26.915 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=151 in cache (valid until 14:59:00 31/08/2026 MESZ)
+14:00:26.917 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome151=151.0.7922.138 in cache (valid until 17:03:11 31/08/2026 MESZ)
+14:00:26.917 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14:00:26.934 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 151.0.7922.138 found in cache
+14:00:26.936 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\750033\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+14:00:29.037 [main] INFO com.demoqa.utils.MyListener -- We opened the site https://demoqa.com
+14:00:30.638 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@9863ed5]
+14:00:30.638 [main] INFO com.demoqa.utils.MyListener -- *******************************
+14:00:30.953 [main] INFO com.demoqa.utils.MyListener -- [org.openqa.selenium.interactions.Sequence@8a7cd7c]
+14:00:30.954 [main] INFO com.demoqa.utils.MyListener -- *******************************
+14:00:55.017 [main] ERROR com.demoqa.utils.MyListener -- The test has a problem!!!
+14:00:55.017 [main] ERROR com.demoqa.utils.MyListener -- **************************
+14:00:55.017 [main] ERROR com.demoqa.utils.MyListener -- Method --> findElement
+14:00:55.017 [main] ERROR com.demoqa.utils.MyListener -- Target exception --> {}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#uploadedFilePath"}
+  (Session info: chrome=151.0.7922.174)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2af3af9479ad0a95cd300538e182b568, findElement {using=id, value=uploadedFilePath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\750033\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65406}, goog:processID: 6500, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65406/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2af3af9479ad0a95cd300538e182b568
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:326)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$0(WebDriverDecorator.java:416)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$pW7L3fgs.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy61.getText(Unknown Source)
+	at com.demoqa.core.BasePage.isContainsText(BasePage.java:70)
+	at com.demoqa.pages.elements.UploadPage.verifyFilePath(UploadPage.java:54)
+	at com.demoqa.test.ElementsTest.performKeyEventTest(ElementsTest.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:700)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:528)
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:53)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:124)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:256)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:228)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:189)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:109)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:168)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:126)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:100)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:57)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:45)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:57)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+14:00:55.019 [main] ERROR com.demoqa.utils.MyListener -- Screen with error -->screenshots/screen_396.png
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,6 @@
+com\demoqa\test\LoginTest.class
+com\demoqa\core\TestBase.class
+com\demoqa\test\ElementsTest.class
+com\demoqa\utils\LoggerWriter.class
+com\demoqa\test\AlertTests.class
+com\demoqa\test\WidgeeTstest.class
