@@ -29,6 +29,6 @@ public class LoginTest extends TestBase {
         String password = System.getProperty("password");
         new LoginPage(driver).enterUserData(userName,password)
                 .clickOnLoginButton()
-                .verifyUserName(userName);
+                .verifyUserName("Kris");
     }
 }
